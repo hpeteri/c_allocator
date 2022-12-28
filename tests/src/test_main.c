@@ -1,7 +1,7 @@
 #include <stdio.h>
 
+#define N1_ALLOCATOR_IMPLEMENTATION
 #include "n1_allocator.h"
-#include "n1_allocator.c"
 
 int main(void){
   n1_Allocator allocator = default_allocator();
