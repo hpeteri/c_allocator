@@ -1,7 +1,7 @@
 #ifndef N1_ALLOCATOR_H
 #define N1_ALLOCATOR_H
 
-#define N1_ZERO_MEMORY(data){memset(data, sizeof(*data), 0);}
+#define N1_ZERO_MEMORY(data){memset(data, 0, sizeof(*data));}
 
 typedef struct n1_Allocator{
   void* (*alloc)(size_t);
